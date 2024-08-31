@@ -1,22 +1,9 @@
-type Props = {};
+import Blog from "./Blog";
 
-import { useNavigate } from "react-router-dom";
-
-const App = (props: Props) => {
-  const navigate = useNavigate();
-
+const App = () => {
   return (
-    <div className="h-screen w-screen bg-purple-50">
-      <br />
-      Hello World
-      <br />
-      <button
-        onClick={() => {
-          navigate("/home");
-        }}
-      >
-        Click Here to GO to HOME page
-      </button>
+    <div className="h-screen w-screen bg-customBg flex justify-center items-center">
+      <Blog />
     </div>
   );
 };
